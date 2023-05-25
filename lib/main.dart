@@ -29,7 +29,7 @@ class XylophoneApp extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: List<Widget>.generate(
-              7,
+              colors.length,
               (index) => createExpandedKey(
                 playSound: () => playSound(index + 1),
                 color: colors[index],
